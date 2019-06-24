@@ -85,7 +85,7 @@ namespace encoder
 
         public byte[] decryptPl()
         {
-            string enc_pl = "22,3,35,5";//...
+            string enc_pl = "22,3,35,5";//Put your encoded payload here... (Use AES_Encrypt() to encode it)
             string[] Payload_Encrypted_Without_delimiterChar = enc_pl.Split(',');
             byte[] _X_to_Bytes = new byte[Payload_Encrypted_Without_delimiterChar.Length];
             for (int i = 0; i < Payload_Encrypted_Without_delimiterChar.Length; i++)
